@@ -88,3 +88,13 @@ function custom_blocks_block_content($delta) {
       break;
   }
 }
+
+/**
+ * Implementation of hook_views_api().
+ */
+function custom_blocks_views_api() {
+  return array(
+    'api' => 2,
+    'path' => drupal_get_path('module', 'custom_blocks') . '/views',
+  );
+}

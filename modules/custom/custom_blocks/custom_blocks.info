@@ -5,3 +5,4 @@ version = VERSION
 core = 6.x
 
 dependencies[] = taxonomy
+dependencies[] = views
