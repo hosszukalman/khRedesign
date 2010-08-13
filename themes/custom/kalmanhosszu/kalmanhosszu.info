@@ -1,0 +1,8 @@
+name = Kalman Hosszu
+description = Kalman-hosszu site's default theme
+screenshot = screenshot.jpg
+core = 6.x
+version = VERSION
+engine = phptemplate
+
+stylesheets[all][] = style.css
