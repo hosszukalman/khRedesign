@@ -1,0 +1,90 @@
+<?php
+// $Id$
+/**
+ * @file custom_blocks.module - 2010-08-13
+ *
+ * 
+ *
+ *
+ * @author Kálmán Hosszu - hosszu.kalman@gmail.com - http://kalman-hosszu.com
+ */
+
+/**
+ * Implementation of hook_theme().
+ *
+ * Define the following templates:
+ *  -
+ *
+ * @return Array of defined theme functions
+ *
+ * @see custom-blocks-categories-block.tpl.php
+ */
+function custom_blocks_theme($existing, $type, $theme, $path) {
+  return array(
+    'custom_blocks_categories_block' => array(
+      'arguments' => array('links' => NULL),
+      'template' => 'custom-blocks-categories-block',
+      'path' => drupal_get_path('module', 'custom_blocks') . '/theme',
+    )
+  );
+}
+
+/**
+ * Implementation of hook_block().
+ *
+ * @param $op What kind of information to retrieve about the block. Possible values: list, configure, save, view.
+ * @param $delta Which block to return.
+ * @param $edit Data from a configuration form, if submitted.
+ */
+function custom_blocks_block($op = 'list', $delta = 0, $edit = array()) {
+  switch ($op) {
+    case 'list':
+      $blocks = array();
+
+      $blocks['categories'] = array(
+        'info' => t('Blog categories'),
+      );
+
+      return $blocks;
+      break;
+
+    case 'view':
+      $blocks = array();
+
+      switch ($delta) {
+        case 'categories':
+          $block['subject'] = t('Categories');
+          break;
+      }
+
+      $block['content'] = custom_blocks_block_content($delta);
+      return $block;
+  }
+}
+
+/**
+ * Generate block contents.
+ *
+ * @param $delta The block id.
+ * @return The generated block content.
+ */
+function custom_blocks_block_content($delta) {
+  switch ($delta) {
+    case 'categories':
+      $result = db_query("SELECT td.name, td.tid, COUNT(n.nid) AS node_counter FROM {node} n
+       INNER JOIN {term_node} tn ON n.vid = tn.vid
+       INNER JOIN {term_data} td ON tn.tid = td.tid
+       WHERE (n.type = 'blog') AND (n.status <> 0) AND (td.vid = 1)
+       GROUP BY td.name ORDER BY td.weight ASC, td.name");
+
+      $links = array();
+      while ($term = db_fetch_array($result)) {
+        $links[] = array(
+          'title' => $term['name'] . ' (' . $term['node_counter'] . ')',
+          'href' => 'taxonomy/term/' . $term['tid'],
+        );
+      }
+      return theme('custom_blocks_categories_block', $links);
+      break;
+  }
+}

@@ -1,0 +1,7 @@
+name = Custom blocks
+description = Kalman-hosszu site's custom blocks
+package = Kalman Hosszu
+version = VERSION
+core = 6.x
+
+dependencies[] = taxonomy
