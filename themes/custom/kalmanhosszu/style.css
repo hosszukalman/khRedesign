@@ -185,3 +185,9 @@ h1.title, body.front #main #content h2 a {
   background: transparent url('img/container_bg.jpg') repeat-y left top;
   height: 100%;
 }
+
+
+/* ADMIN MENU PATCH */
+#admin-menu {
+  top: -20px;
+}
