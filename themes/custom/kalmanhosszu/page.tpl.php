@@ -80,13 +80,7 @@
         </div> <!-- /content -->
 
       </div></div> <!-- /main-squeeze /main -->
-
-      <?php if (!empty($right)): ?>
-        <div id="sidebar-right" class="column sidebar">
-          <?php print $right; ?>
-        </div> <!-- /sidebar-right -->
-      <?php endif; ?>
-
+      <div class="clear"></div>
     </div> <!-- /container -->
 
     <div id="footer-wrapper">

@@ -125,5 +125,6 @@ h1.title, body.front #main #content h2 a {
 
 #container {
   background: transparent url('img/container_bg.jpg') repeat-y left top;
+  height: 100%;
 }
 
