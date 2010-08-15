@@ -74,6 +74,12 @@
           <?php if (!empty($messages)): print $messages; endif; ?>
           <?php if (!empty($help)): print $help; endif; ?>
           <div id="content-content" class="clear-block">
+            <?php if (!empty($content_top)): ?>
+              <div id="content_top">
+                <?php print $content_top; ?>
+              </div> <!-- /content_top -->
+            <?php endif; ?>
+              
             <?php print $content; ?>
           </div> <!-- /content-content -->
           <?php print $feed_icons; ?>
