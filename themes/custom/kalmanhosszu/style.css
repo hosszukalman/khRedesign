@@ -6,6 +6,15 @@ body {
   color: #666666;
 }
 
+/* STYLES */
+a, a:visited {
+  color: #0C92FF;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 .clear {clear: both;}
 
 /* STRUCT */
