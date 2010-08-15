@@ -30,10 +30,18 @@
     </div> <!-- /header_left -->
 
     <div id="header_right">
+      <?php if (!empty($secondary_links)): ?>
+        <div id="secondary" class="clear-block">
+          <?php print theme('links', $secondary_links, array('class' => 'links secondary-links')); ?>
+        </div>
+        <div class="clear"></div>
+      <?php endif; ?>
+
       <?php if (!empty($primary_links)): ?>
-          <div id="primary" class="clear-block">
-            <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
-          </div>
+        <div id="primary" class="clear-block">
+          <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
+        </div>
+        <div class="clear"></div>
       <?php endif; ?>
       
       <?php if (!empty($site_slogan)): ?>
@@ -49,15 +57,6 @@
 
 
     <div id="container" class="clear-block">
-
-      <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "withprimary"; } if (!empty($secondary_links)) { print " withsecondary"; } ?> ">
-
-        <?php if (!empty($secondary_links)): ?>
-          <div id="secondary" class="clear-block">
-            <?php print theme('links', $secondary_links, array('class' => 'links secondary-links')); ?>
-          </div>
-        <?php endif; ?>
-      </div> <!-- /navigation -->
 
       <?php if (!empty($left)): ?>
         <div id="sidebar-left" class="column sidebar">
