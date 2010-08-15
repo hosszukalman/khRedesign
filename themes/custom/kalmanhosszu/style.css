@@ -167,6 +167,10 @@ div.sidebar div.block h2 {
   margin: 0px;
 }
 
+div.sidebar div.block.first h2 {
+  background: transparent url('img/left_region_first_block_header.jpg') no-repeat left top;
+}
+
 div.sidebar div.block {
   width: 220px;
   margin-left: 19px;
@@ -180,7 +184,9 @@ div.sidebar div.block.first {
 div.sidebar div.block div.content {
   background: #EAF1F6;
   padding: 10px 5px 10px 20px;
-  border: 1px solid #BBCFDE;
+  border-right: 1px solid #BBCFDE;
+  border-bottom: 1px solid #BBCFDE;
+  border-left: 1px solid #BBCFDE;
   -moz-border-radius:0px 0px 10px 10px;
   -webkit-border-radius:0px 0px 10px 10px;
   border-radius: 0px 0px 10px 10px;
