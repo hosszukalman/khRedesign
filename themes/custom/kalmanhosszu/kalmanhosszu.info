@@ -6,3 +6,4 @@ version = VERSION
 engine = phptemplate
 
 stylesheets[all][] = style.css
+scripts[] = scripts.js

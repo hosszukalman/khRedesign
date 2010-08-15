@@ -22,39 +22,25 @@
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
           <img src="<?php print $logo; ?>" alt="Hosszu Kálmám - Drupal fejelsztő és tanácsadó" />
         </a>
+      <?php elseif (!empty($site_name)): ?>
+        <h1 id="site-name">
+          <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
+        </h1>
       <?php endif; ?>
     </div> <!-- /header_left -->
 
     <div id="header_right">
-
-    </div> <!-- /header_right -->
-
-    <div class="clear"></div>
-
-    <div id="header">
-        <div id="name-and-slogan">
-          <?php if (!empty($site_name)): ?>
-            <h1 id="site-name">
-              <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-            </h1>
-          <?php endif; ?>
-
-          <?php if (!empty($site_slogan)): ?>
-            <div id="site-slogan"><?php print $site_slogan; ?></div>
-          <?php endif; ?>
-        </div> <!-- /name-and-slogan -->
+      <?php if (!empty($site_slogan)): ?>
+        <div id="site-slogan"><?php print $site_slogan; ?></div>
+      <?php endif; ?>
 
       <?php if (!empty($search_box)): ?>
         <div id="search-box"><?php print $search_box; ?></div>
       <?php endif; ?>
+    </div> <!-- /header_right -->
 
-      <?php if (!empty($header)): ?>
-        <div id="header-region">
-          <?php print $header; ?>
-        </div>
-      <?php endif; ?>
+    <div class="clear"></div>
 
-    </div> <!-- /header -->
 
     <div id="container" class="clear-block">
 
