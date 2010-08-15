@@ -63,6 +63,32 @@ body {
   float: right;
 }
 
+/* PRIMARY LINKS */
+#primary {
+  float: right;
+  padding-top: 70px;
+}
+
+#primary li {
+  background: transparent url('img/primary_separator.jpg') no-repeat right top;
+  padding: 50px 15px 30px 15px;
+}
+
+#primary li.last {
+  background: none;
+  padding-right: 5px;
+}
+
+#primary li.first {
+  padding-left: 0px;
+}
+
+#primary a {
+  font-size: 17px;
+  color: white;
+  text-decoration: none;
+}
+
 /* SEARCH BOX */
 #edit-search-theme-form-1 {
   background: transparent url('img/search_input_bg.png') no-repeat left top;

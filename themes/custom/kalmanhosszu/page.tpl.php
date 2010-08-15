@@ -30,6 +30,12 @@
     </div> <!-- /header_left -->
 
     <div id="header_right">
+      <?php if (!empty($primary_links)): ?>
+          <div id="primary" class="clear-block">
+            <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
+          </div>
+      <?php endif; ?>
+      
       <?php if (!empty($site_slogan)): ?>
         <div id="site-slogan"><?php print $site_slogan; ?></div>
       <?php endif; ?>
@@ -45,11 +51,6 @@
     <div id="container" class="clear-block">
 
       <div id="navigation" class="menu <?php if (!empty($primary_links)) { print "withprimary"; } if (!empty($secondary_links)) { print " withsecondary"; } ?> ">
-        <?php if (!empty($primary_links)): ?>
-          <div id="primary" class="clear-block">
-            <?php print theme('links', $primary_links, array('class' => 'links primary-links')); ?>
-          </div>
-        <?php endif; ?>
 
         <?php if (!empty($secondary_links)): ?>
           <div id="secondary" class="clear-block">
