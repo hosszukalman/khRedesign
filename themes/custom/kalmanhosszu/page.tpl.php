@@ -83,16 +83,22 @@
       <div class="clear"></div>
     </div> <!-- /container -->
 
-    <div id="footer-wrapper">
-      <div id="footer">
-        <?php print $footer_message; ?>
-        <?php if (!empty($footer)): print $footer; endif; ?>
-      </div> <!-- /footer -->
-    </div> <!-- /footer-wrapper -->
 
     <?php print $closure; ?>
 
   </div> <!-- /page -->
+
+  <div id="footer-wrapper">
+    <div id="footer_center">
+      <div id="footer">
+        <p>The theme originally created by <a href="http://www.kalman-hosszu.com" title="Kálmán Hosszu, Drupal developer and counsultan">Kálmán Hosszu</a></p>
+        <?php print $footer_message; ?>
+        <?php if (!empty($footer)): print $footer; endif; ?>
+      </div> <!-- /footer -->
+    </div> <!-- /footer_center -->
+  </div> <!-- /footer-wrapper -->
+  
+  <div id="footer_bottom"></div>
 
 </body>
 </html>

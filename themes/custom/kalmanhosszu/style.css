@@ -186,6 +186,29 @@ h1.title, body.front #main #content h2 a {
   height: 100%;
 }
 
+/* FOOTER */
+#footer-wrapper {
+  background: #F1F7FA;
+  border-top: 1px solid #D5E4ED;
+  border-bottom: 1px solid #D5E4ED;
+  padding: 15px 0px;
+  position: relative;
+}
+
+#footer_bottom {
+  background: #F1F7FA;
+  height: 10px;
+  position: relative;
+}
+
+#footer_center {
+  width: 960px;
+  margin: auto;
+}
+
+#footer {
+  padding-left: 310px;
+}
 
 /* ADMIN MENU PATCH */
 #admin-menu {
