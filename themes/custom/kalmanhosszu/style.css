@@ -248,6 +248,44 @@ h1.title, body.front #main #content h2 a {
   padding-left: 310px;
 }
 
+/* NODE DESIGN */
+div.submitted {
+  background: #ECFFD1;
+  padding: 10px 5px 5px 5px;
+  font-size: 11px;
+  color: #0D92FF;
+}
+
+div.submitted span.ico_img {
+  display: block;
+  float: left;
+  padding-right: 5px;
+}
+
+div.submitted span.comment_data, div.submitted span.date_data, div.submitted span.tags_data {
+  padding-left: 15px;
+  display: block;
+  float: left;
+}
+
+div.submitted span.tags_data li.first {
+  padding-left: 0px;
+}
+
+div.submitted span.comment_data, div.submitted span.author_data {
+  padding: 0px;
+}
+
+div.submitted span.author_data {
+  float: right;
+  color: #999999;
+}
+
+div.node {
+  border-bottom: 1px solid #D5E4ED;
+  padding-bottom: 10px;
+}
+
 /* ADMIN MENU PATCH */
 #admin-menu {
   top: -20px;

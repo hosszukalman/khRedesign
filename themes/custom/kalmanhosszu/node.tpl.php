@@ -56,19 +56,32 @@
   <h2><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
 <?php endif; ?>
 
-  <div class="meta">
-  <?php if ($submitted): ?>
-    <span class="submitted"><?php print $submitted ?></span>
-  <?php endif; ?>
-
-  <?php if ($terms): ?>
-    <div class="terms terms-inline"><?php print $terms ?></div>
-  <?php endif;?>
-  </div>
-
   <div class="content">
     <?php print $content ?>
   </div>
 
   <?php print $links; ?>
+
+  <div class="submitted">
+    <span class="comment_data">
+      <span class="ico_img">
+        <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/comment_ico.jpg', t('comments'), t('@count comments', array('@count' => $comment_count))) ?>
+      </span>
+      <?php echo t('@count comments', array('@count' => $comment_count)) ?>
+    </span>
+    <span class="date_data">
+      <span class="ico_img">
+        <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/date_ico.jpg', t('publishing date'), t('published at @date', array('@date' => $date))) ?>
+      </span>
+      <?php echo $date ?>
+    </span>
+    <span class="tags_data">
+      <span class="ico_img">
+        <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/tags_ico.jpg', t('tags'), t('terms')) ?>
+      </span>
+      <?php echo $terms ?>
+    </span>
+    <span class="author_data"><?php echo t('by !name', array('!name' => $name)); ?></span>
+    <div class="clear"></div>
+  </div>
 </div>
