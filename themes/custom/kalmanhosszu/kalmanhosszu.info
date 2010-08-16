@@ -12,3 +12,8 @@ regions[left] = Left sidebar
 regions[content_top] = Content top
 regions[content] = Content
 regions[footer] = Footer
+
+; Settings
+settings[kalmanhosszu_rss_feed_icon] = 0
+settings[kalmanhosszu_linked_in_url] = ''
+settings[kalmanhosszu_twitter_url] = ''

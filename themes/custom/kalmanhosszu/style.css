@@ -65,6 +65,15 @@ a:hover {
   margin-top: 25px;
 }
 
+#social_media {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#social_media a {
+  margin-left: 3px;
+}
+
 #header_right {
   background: transparent url('img/header_right_bg.jpg') no-repeat left top;
   height: 192px;

@@ -27,6 +27,22 @@
           <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
         </h1>
       <?php endif; ?>
+      <?php if ($show_rss_feed_icon || $linked_in_url || $twitter_url): ?>
+        <div id="social_media">
+          <?php if ($show_rss_feed_icon): ?>
+            <?php echo l(theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/rss_ico.png', 'RSS', 'RSS'), 'rss.xml',
+              array('html' => TRUE, 'attributes' => array('target' => '_blank'))); ?>
+          <?php endif; ?>
+          <?php if ($linked_in_url): ?>
+            <?php echo l(theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/linked_in_ico.png', 'LinkedIn', 'LinkedIn'), $linked_in_url,
+              array('html' => TRUE, 'attributes' => array('target' => '_blank'))); ?>
+          <?php endif; ?>
+          <?php if ($twitter_url): ?>
+            <?php echo l(theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/twitter_ico.png', 'Twitter', 'Twitter'), $twitter_url,
+              array('html' => TRUE, 'attributes' => array('target' => '_blank'))); ?>
+          <?php endif; ?>
+          </div> <!-- /social_media -->
+      <?php endif; ?>
     </div> <!-- /header_left -->
 
     <div id="header_right">

@@ -23,4 +23,9 @@ function phptemplate_preprocess_page(&$vars) {
   if (!empty($vars['secondary_links'])) {
     $vars['body_classes'] .= ' secondary_links';
   }
+
+  // Theme settings
+  $vars['show_rss_feed_icon'] = theme_get_setting('kalmanhosszu_rss_feed_icon');
+  $vars['linked_in_url'] = theme_get_setting('kalmanhosszu_linked_in_url');
+  $vars['twitter_url'] = theme_get_setting('kalmanhosszu_twitter_url');
 }
