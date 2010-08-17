@@ -7,6 +7,34 @@ body {
 }
 
 /* STYLES */
+h1, h2, h3 {
+  font-family: Trebuchet MS;
+  text-decoration: none;
+}
+
+h1, body.front #main #content h2 a {
+  color: #EB6520;
+  font-size: 24px;
+}
+
+h2 {
+  font-size: 20px;
+  color: #0066CC;
+}
+
+h3 {
+  font-size: 17px;
+  color: #003366;
+}
+
+ul, ol {
+  color: #66FF00;
+}
+
+ul li, ol li {
+  color: #666666;
+}
+
 a, a:visited {
   color: #0C92FF;
   text-decoration: none;
@@ -15,6 +43,73 @@ a, a:visited {
 a:hover {
   text-decoration: underline;
 }
+
+blockquote {
+  border-left: 1px solid #E1D6C5;
+  font-style: italic;
+  margin-left: 20px;
+  padding-left: 15px;
+  color: #957237;
+}
+
+#content div.node div.content a:hover {
+  text-decoration: none;
+  background-color: #B6DEFF;
+}
+
+#content div.node div.content img {
+  padding: 4px;
+  border: 1px solid #70A8FF;
+  -moz-box-shadow: 0px 0px 10px #70A8FF;
+  -webkit-box-shadow: 0px 0px 10px #70A8FF;
+  box-shadow: 0px 0px 10px #70A8FF;
+}
+
+div.messages {
+  padding: 20px 20px 20px 70px;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius: 10px;
+  color: #333333;
+  margin: 10px 0px;
+}
+
+div.messages ul {
+  padding-left: 10px;
+}
+
+div.messages.error {
+  background: #FFD2D2 url('img/message_error_ico.jpg') no-repeat left top;
+  border: 1px solid #FF9393;
+}
+
+div.messages.status {
+  background: #BFFFBF url('img/message_status_ico.jpg') no-repeat left top;
+  border: 1px solid #31FE54;
+}
+
+div.messages.warning {
+  background: #BFD9FF url('img/message_warning_ico.jpg') no-repeat left top;
+  border: 1px solid #64A2FF;
+}
+
+.orange_higlight {
+  background: #FF5700;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF8A00', endColorstr='#FF5700');
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF8A00), to(#FF5700));
+  background: -moz-linear-gradient(top, #FF8A00, #FF5700);
+  padding: 10px;
+  color: white;
+  border:  1px solid #FFC46A;
+}
+
+.blue_highlight {
+  padding: 10px;
+  color: white;
+  background: #0D92FF;
+  border: 1px solid #84CDFF;
+}
+
 .clear {clear: both;}
 
 /* STRUCT */
@@ -220,12 +315,6 @@ body.one-sidebar #main {
   width: 650px;
   float: left;
   margin-left: 50px;
-}
-
-h1.title, body.front #main #content h2 a {
-  color: #EB6520;
-  font-size: 24px;
-  text-decoration: none;
 }
 
 #container {
