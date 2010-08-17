@@ -27,10 +27,10 @@
             <a href="<?php print $front_page ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
           </h1>
         <?php endif; ?>
-        <?php if ($show_rss_feed_icon || $linked_in_url || $twitter_url): ?>
+        <?php if ($rss_feed_url || $linked_in_url || $twitter_url): ?>
           <div id="social_media">
-            <?php if ($show_rss_feed_icon): ?>
-              <?php echo l(theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/rss_ico.png', 'RSS', 'RSS'), 'rss.xml',
+            <?php if ($rss_feed_url): ?>
+              <?php echo l(theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/rss_ico.png', 'RSS', 'RSS'), $rss_feed_url,
                 array('html' => TRUE, 'attributes' => array('target' => '_blank'))); ?>
             <?php endif; ?>
             <?php if ($linked_in_url): ?>
@@ -98,7 +98,6 @@
 
               <?php print $content; ?>
             </div> <!-- /content-content -->
-            <?php print $feed_icons; ?>
           </div> <!-- /content -->
 
         </div></div> <!-- /main-squeeze /main -->

@@ -22,10 +22,10 @@ function kalmanhosszu_settings($saved_settings, $subtheme_defaults = array()) {
   $settings = array_merge($defaults, $saved_settings);
 
   // Create the form
-  $form['kalmanhosszu_rss_feed_icon'] = array(
-    '#type' => 'checkbox',
-    '#title' => t('Enable RSS feed icon'),
-    '#default_value' => $settings['kalmanhosszu_rss_feed_icon'],
+  $form['kalmanhosszu_rss_feed_url'] = array(
+    '#type' => 'textfield',
+    '#title' => t('RSS URL'),
+    '#default_value' => $settings['kalmanhosszu_rss_feed_url'],
   );
 
   $form['kalmanhosszu_linked_in_url'] = array(

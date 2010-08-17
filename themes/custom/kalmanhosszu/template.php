@@ -25,7 +25,10 @@ function phptemplate_preprocess_page(&$vars) {
   }
 
   // Theme settings
-  $vars['show_rss_feed_icon'] = theme_get_setting('kalmanhosszu_rss_feed_icon');
+  $vars['rss_feed_url'] = theme_get_setting('kalmanhosszu_rss_feed_url');
+  if (is_null($vars['rss_feed_url'])) {
+    $vars['rss_feed_url'] = 'rss.xml';
+  }
   $vars['linked_in_url'] = theme_get_setting('kalmanhosszu_linked_in_url');
   $vars['twitter_url'] = theme_get_setting('kalmanhosszu_twitter_url');
 }
