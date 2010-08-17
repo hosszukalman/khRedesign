@@ -32,3 +32,17 @@ function phptemplate_preprocess_page(&$vars) {
   $vars['linked_in_url'] = theme_get_setting('kalmanhosszu_linked_in_url');
   $vars['twitter_url'] = theme_get_setting('kalmanhosszu_twitter_url');
 }
+
+/**
+ * Theme a "Submitted by ..." notice.
+ *
+ * @param stdClass $comment The comment data object
+ */
+function phptemplate_comment_submitted($comment) {
+  return t('By !username - @datetime.',
+    array(
+      '!username' => '<span class="comment_username">' . theme('username', $comment) . '</span>',
+      '@datetime' => format_date($comment->timestamp)
+    ));
+
+}

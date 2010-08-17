@@ -295,6 +295,59 @@ div.node {
   padding-bottom: 10px;
 }
 
+/* COMMENTS */
+div.comment {
+  margin-bottom: 25px;
+}
+
+div.comment.even h3 a {
+  color: #FF3300;
+}
+
+div.comment h3 a, div.comment.author_comment h3 a {
+  font-size: 14px;
+  color: #333333;
+}
+
+div.comment h3 {
+  margin: 0px;
+  padding: 15px 0px 2px 0px;
+}
+
+div.comment.odd h3 {
+  background: transparent url('img/comment_odd_header_bg.jpg') repeat-x left top;
+}
+
+div.comment.even h3 {
+  background: transparent url('img/comment_even_header_bg.jpg') repeat-x left top;
+}
+
+div.comment.author_comment h3 {
+  background: transparent url('img/comment_author_header_bg.jpg') repeat-x left top;
+}
+
+div.comment div.comment_submitted {
+  color: #666666;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+div.comment.even div.comment_submitted span.comment_username, div.comment.even div.comment_submitted span.comment_username a {
+  color: #FF9900;
+}
+
+div.comment div.comment_submitted span.comment_username, div.comment div.comment_submitted span.comment_username a {
+  color: #0C92FF;
+}
+
+div.comment.author_comment {
+  background: #D2FFD2;
+}
+
+div.comment.author_comment h3, div.comment.author_comment div.comment_submitted, div.comment.author_comment div.content {
+  padding-left: 10px;
+}
+
 /* ADMIN MENU PATCH */
 #admin-menu {
   top: -20px;

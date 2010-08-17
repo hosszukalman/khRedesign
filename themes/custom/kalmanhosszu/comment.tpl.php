@@ -26,17 +26,11 @@
  * @see theme_comment()
  */
 ?>
-<div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status ?> clear-block">
-  <?php print $picture ?>
-
-  <?php if ($comment->new): ?>
-    <span class="new"><?php print $new ?></span>
-  <?php endif; ?>
-
+<div class="comment<?php print ($comment->new) ? ' comment-new' : ''; print ' '. $status . ' ' . $zebra ?><?php if ($comment->uid == $node->uid) echo ' author_comment' ?> clear-block">
   <h3><?php print $title ?></h3>
 
-  <div class="submitted">
-    <?php print $submitted ?>
+  <div class="comment_submitted">
+    <?php echo $submitted ?>
   </div>
 
   <div class="content">
