@@ -111,6 +111,8 @@ div.messages.warning {
 }
 
 .clear {clear: both;}
+.c-l {clear: left;}
+.c-r {clear: right;}
 
 /* STRUCT */
 #left_out, #right_out {
@@ -313,6 +315,10 @@ div.sidebar div.block div.content ul {
 /* MAIN */
 #page-title {
   float: left;
+}
+
+#main {
+  margin-top: -40px;
 }
 
 body.one-sidebar #main {

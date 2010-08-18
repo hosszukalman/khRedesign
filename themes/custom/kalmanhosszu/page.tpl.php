@@ -99,7 +99,7 @@
                 <?php endif; ?>
               </div>
             <?php endif; ?>
-            <div class="clear"></div>
+            <div class="c-l"></div>
             <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
             <?php if (!empty($messages)): print $messages; endif; ?>
             <?php if (!empty($help)): print $help; endif; ?>
