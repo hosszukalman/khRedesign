@@ -17,3 +17,7 @@ regions[footer] = Footer
 settings[kalmanhosszu_rss_feed_url] = 'rss.xml'
 settings[kalmanhosszu_linked_in_url] = ''
 settings[kalmanhosszu_twitter_url] = ''
+settings[kalmanhosszu_show_facebook_share] = 0
+settings[kalmanhosszu_show_iwiw_share] = 0
+settings[kalmanhosszu_show_twitter_share] = 0
+settings[kalmanhosszu_twitter_acc] = ''

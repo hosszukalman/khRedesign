@@ -86,6 +86,20 @@
 
           <div id="content">
             <?php if (!empty($title)): ?><h1 class="title" id="page-title"><?php print $title; ?></h1><?php endif; ?>
+            <?php if ($show_facebook_share || $show_iwiw_share || $show_twitter_share): ?>
+              <div id="share_links">
+                <?php if ($show_facebook_share): ?>
+                  <a name="fb_share" type="button" href="http://www.facebook.com/sharer.php">Megosztás</a><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+                <?php endif; ?>
+                <?php if ($show_iwiw_share): ?>
+                  <script>function iwiwshare_click() {u=location.href;t=document.title;window.open('http://iwiw.hu/pages/share/share.jsp?u='+encodeURIComponent(u)+'&t='+encodeURIComponent(t),'iwiwshare','toolbar=0,status=0,location=1, width=650,height=600,scrollbars=1');return false;}</script><a href="http://iwiw.hu/pages/share/share.jsp?u=<url>" onclick="return iwiwshare_click()" target="_blank"><img src="http://static.iwiw.hu/common/image/share/b-megosztas-b.gif" alt="" border="0" /></a>
+                <?php endif; ?>
+                <?php if ($show_twitter_share): ?>
+                  <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" <?php if ($twitter_acc) echo 'data-via="' . $twitter_acc . '"' ?>>Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+                <?php endif; ?>
+              </div>
+            <?php endif; ?>
+            <div class="clear"></div>
             <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
             <?php if (!empty($messages)): print $messages; endif; ?>
             <?php if (!empty($help)): print $help; endif; ?>

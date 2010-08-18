@@ -31,6 +31,10 @@ function phptemplate_preprocess_page(&$vars) {
   }
   $vars['linked_in_url'] = theme_get_setting('kalmanhosszu_linked_in_url');
   $vars['twitter_url'] = theme_get_setting('kalmanhosszu_twitter_url');
+  $vars['show_facebook_share'] = theme_get_setting('kalmanhosszu_show_facebook_share');
+  $vars['show_iwiw_share'] = theme_get_setting('kalmanhosszu_show_iwiw_share');
+  $vars['show_twitter_share'] = theme_get_setting('kalmanhosszu_show_twitter_share');
+  $vars['twitter_acc'] = theme_get_setting('kalmanhosszu_twitter_acc');
 }
 
 /**

@@ -311,6 +311,10 @@ div.sidebar div.block div.content ul {
 }
 
 /* MAIN */
+#page-title {
+  float: left;
+}
+
 body.one-sidebar #main {
   width: 650px;
   float: left;
@@ -320,6 +324,20 @@ body.one-sidebar #main {
 #container {
   background: transparent url('img/container_bg.jpg') repeat-y left top;
   height: 100%;
+}
+
+#share_links {
+  background: #F0F5F9;
+  border-bottom: 1px solid #D4E3ED;
+  padding: 10px 10px 5px 10px;
+  margin: 10px;
+  float: right;
+  width: 87px;
+  text-align: center;
+}
+
+#share_links span.FBConnectButton {
+  margin-bottom: 5px;
 }
 
 /* BREADCRUMB */
