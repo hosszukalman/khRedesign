@@ -347,6 +347,12 @@ body.one-sidebar #main {
 }
 
 /* NODE DESIGN */
+div.links {
+  border-top: 1px solid #ECFFD1;
+  background: transparent url('img/links_ico.png') no-repeat left top;
+  padding: 5px 5px 5px 25px;
+}
+
 div.submitted {
   background: #ECFFD1;
   padding: 10px 5px 5px 5px;

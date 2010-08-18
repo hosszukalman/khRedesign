@@ -42,5 +42,9 @@
     <?php endif; ?>
   </div>
 
-  <?php print $links ?>
+  <?php if ($links): ?>
+    <div class="links">
+      <?php echo $links; ?>
+    </div>
+  <?php endif; ?>
 </div>
