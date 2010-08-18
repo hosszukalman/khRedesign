@@ -322,6 +322,14 @@ body.one-sidebar #main {
   height: 100%;
 }
 
+/* BREADCRUMB */
+div.breadcrumb {
+  background: #ECF3F9;
+  border-top: 1px solid #DFEAF1;
+  color: #85E94D;
+  padding: 7px;
+}
+
 /* FOOTER */
 #footer-wrapper {
   background: #F1F7FA;
