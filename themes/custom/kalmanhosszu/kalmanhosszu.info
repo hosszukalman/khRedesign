@@ -21,3 +21,12 @@ settings[kalmanhosszu_show_facebook_share] = 0
 settings[kalmanhosszu_show_iwiw_share] = 0
 settings[kalmanhosszu_show_twitter_share] = 0
 settings[kalmanhosszu_twitter_acc] = ''
+
+; Features
+features[] = logo
+features[] = slogan
+features[] = mission
+features[] = search
+features[] = favicon
+features[] = primary_links
+features[] = secondary_links
