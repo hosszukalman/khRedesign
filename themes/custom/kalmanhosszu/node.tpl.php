@@ -87,8 +87,8 @@
           <?php echo $terms ?>
         </span>
         <span class="author_data"><?php echo t('by !name', array('!name' => $name)); ?></span>
-        <div class="clear"></div>
       <?php endif; ?>
+      <div class="clear"></div>
     </div>
   <?php endif; ?>
 </div>
