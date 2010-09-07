@@ -134,7 +134,7 @@ function custom_blocks_views_default_views() {
       'default_argument_fixed' => '13+10',
       'default_argument_php' => 'if ($node = menu_get_object()) {
   $tids = array();
-  $result = db_query("SELECT tid FROM {term_data} WHERE vid = 1");
+  $result = db_query("SELECT tid FROM {term_data} WHERE vid = 19");
   while ($term = db_fetch_object($result)) {
     if (array_key_exists($term->tid, $node->taxonomy)) {
       $tids[] = $term->tid;
@@ -160,7 +160,7 @@ function custom_blocks_views_default_views() {
       'validate_argument_php' => '',
     ),
   ));
-  $handler->override_option('title', 'Kapcsolódó tartalmak');
+  $handler->override_option('title', 'Kapcsolódó');
   $handler->override_option('use_ajax', TRUE);
   $handler->override_option('items_per_page', 5);
   $handler->override_option('use_pager', 'mini');
