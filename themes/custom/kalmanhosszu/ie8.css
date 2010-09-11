@@ -2,3 +2,11 @@
   padding-top: 13px;
   width: 159px;
 }
+
+body.secondary_links #primary {
+  padding-top: 51px;
+}
+
+#primary {
+  padding-top: 72px;
+}
