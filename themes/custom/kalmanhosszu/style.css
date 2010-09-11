@@ -36,7 +36,7 @@ ul li, ol li {
   color: #666666;
 }
 
-a, a:visited {
+a, a:visited, a.sctive, li a, li a.active {
   color: #0C92FF;
   text-decoration: none;
 }
@@ -357,6 +357,29 @@ div.breadcrumb {
   border-top: 1px solid #DFEAF1;
   color: #85E94D;
   padding: 7px;
+}
+
+/* PAGER */
+.item-list {
+  margin: 10px 0px;
+}
+
+.item-list .pager li {
+  padding: 3px 7px;
+  margin-left: 2px;
+}
+
+.item-list .pager li.pager-item a {
+  color: #349898;
+}
+
+.item-list .pager li.pager-item {
+  background: #E7EFF5;
+}
+
+.item-list .pager li.pager-current {
+  background: #0D92FF;
+  color: white;
 }
 
 /* FOOTER */
