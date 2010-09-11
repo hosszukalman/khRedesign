@@ -319,6 +319,7 @@ div.sidebar div.block div.content ul {
 /* MAIN */
 #page-title {
   float: left;
+  width: 520px;
 }
 
 #main {

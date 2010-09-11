@@ -109,7 +109,7 @@
                   <?php endif; ?>
                 </div>
               <?php endif; ?>
-              <div class="c-l"></div>
+              <div class="clear"></div>
               <?php if (!empty($tabs)): ?><div class="tabs"><?php print $tabs; ?></div><?php endif; ?>
               <?php if (!empty($messages)): print $messages; endif; ?>
               <?php if (!empty($help)): print $help; endif; ?>
