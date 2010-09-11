@@ -18,7 +18,7 @@ h1 {
   font-size: 24px;
 }
 
-h2, h2 a {
+h2, h2 a, h2 a:visited {
   font-size: 20px;
   color: #0066CC;
 }
