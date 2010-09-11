@@ -65,29 +65,31 @@
   <?php endif; ?>
   <?php if ($submitted || $terms): ?>
     <div class="submitted">
-      <?php if ($submitted): ?>
-        <span class="comment_data">
-          <span class="ico_img">
-            <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/comment_ico.jpg', t('comments'), t('@count comments', array('@count' => $comment_count))) ?>
+      <div class="submitted_left">
+        <?php if ($submitted): ?>
+          <span class="comment_data">
+            <span class="ico_img">
+              <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/comment_ico.jpg', t('comments'), t('@count comments', array('@count' => $comment_count))) ?>
+            </span>
+            <?php echo t('@count comments', array('@count' => $comment_count)) ?>
           </span>
-          <?php echo t('@count comments', array('@count' => $comment_count)) ?>
-        </span>
-        <span class="date_data">
-          <span class="ico_img">
-            <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/date_ico.jpg', t('publishing date'), t('published at @date', array('@date' => $date))) ?>
+          <span class="date_data">
+            <span class="ico_img">
+              <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/date_ico.jpg', t('publishing date'), t('published at @date', array('@date' => $date))) ?>
+            </span>
+            <?php echo $date ?>
           </span>
-          <?php echo $date ?>
-        </span>
-      <?php endif; ?>
-      <?php if ($terms): ?>
-        <span class="tags_data">
-          <span class="ico_img">
-            <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/tags_ico.jpg', t('tags'), t('terms')) ?>
+        <?php endif; ?>
+        <?php if ($terms): ?>
+          <span class="tags_data">
+            <span class="ico_img">
+              <?php echo theme('image', drupal_get_path('theme', 'kalmanhosszu') . '/img/tags_ico.jpg', t('tags'), t('terms')) ?>
+            </span>
+            <?php echo $terms ?>
           </span>
-          <?php echo $terms ?>
-        </span>
-        <span class="author_data"><?php echo t('by !name', array('!name' => $name)); ?></span>
-      <?php endif; ?>
+        <?php endif; ?>
+      </div>
+      <span class="author_data"><?php echo t('by !name', array('!name' => $name)); ?></span>
       <div class="clear"></div>
     </div>
   <?php endif; ?>

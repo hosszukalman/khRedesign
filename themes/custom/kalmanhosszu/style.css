@@ -397,6 +397,11 @@ div.submitted {
   color: #0D92FF;
 }
 
+div.submitted_left {
+  float: left;
+  width: 550px;
+}
+
 div.submitted span.ico_img {
   display: block;
   float: left;
