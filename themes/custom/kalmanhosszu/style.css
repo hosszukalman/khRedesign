@@ -13,12 +13,12 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-h1, body.front #main #content h2 a {
+h1 {
   color: #EB6520;
   font-size: 24px;
 }
 
-h2 {
+h2, h2 a {
   font-size: 20px;
   color: #0066CC;
 }
