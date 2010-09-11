@@ -5,9 +5,26 @@
 }
 
 #search-theme-form {
-  margin-top: -80px;
+  
+}
+
+body.primary_links #search-theme-form {
+  margin-top: -40px;
+}
+
+body.secondary_links.primary_links #search-theme-form {
+  margin-top: -120px;
 }
 
 h1 {
   margin: 16px 0px;
+}
+
+#primary {
+  padding-bottom: 40px;
+  padding-top: 75px;
+}
+
+body.secondary_links #primary {
+  padding-top: 54px;
 }
