@@ -5,6 +5,7 @@
   <head>
     <?php print $head; ?>
     <title><?php print $head_title; ?></title>
+    <link rel="image_src" href="<?php echo url(drupal_get_path('theme', 'kalmanhosszu'), array('absolute' => TRUE)) ?>/img/share_img.jpg" />
     <?php print $styles; ?>
     <?php print $scripts; ?>
     <!--[if IE 8]>
