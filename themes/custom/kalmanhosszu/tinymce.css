@@ -45,6 +45,7 @@ a:hover {
 
 img {
   padding: 4px;
+  margin: 8px;
   border: 1px solid #70A8FF;
   -moz-box-shadow: 0px 0px 10px #70A8FF;
   -webkit-box-shadow: 0px 0px 10px #70A8FF;
