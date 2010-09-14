@@ -36,6 +36,41 @@ ul li, ol li {
   color: #666666;
 }
 
+textarea, input {
+  -moz-box-shadow: 0 0 5px #5ECFB2;
+  -webkit-box-shadow: 0 0 5px #5ECFB2;
+  box-shadow: 0 0 5px #5ECFB2;
+  background-color: #E8FCCD;
+  border: 1px solid #5ECFB2;
+}
+
+input.form-submit {
+  background: #FF5B00;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF9900', endColorstr='#FF3300');
+  background: -webkit-gradient(linear, left top, left bottom, from(#FF9900), to(#FF3300));
+  background: -moz-linear-gradient(top, #FF9900, #FF3300);
+  font-family: Trebuchet MS;
+  font-size: 14px;
+  padding: 5px 15px;
+  color: white;
+  border:  1px solid #FFC46A;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#search-theme-form input {
+  border: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#search-theme-form input.form-submit {
+  background: transparent;
+  padding: 0px;
+}
+
 a, a:visited, a.sctive, li a, li a.active {
   color: #0C92FF;
   text-decoration: none;
