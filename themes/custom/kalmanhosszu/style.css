@@ -69,6 +69,7 @@ input.form-submit {
 #search-theme-form input.form-submit {
   background: transparent;
   padding: 0px;
+  filter: none;
 }
 
 a, a:visited, a.sctive, li a, li a.active {
