@@ -68,3 +68,7 @@ img {
   background: #0D92FF;
   border: 1px solid #84CDFF;
 }
+
+.blue_highlight a {
+  color: white;
+}

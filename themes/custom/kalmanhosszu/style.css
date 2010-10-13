@@ -148,6 +148,10 @@ div.messages.warning {
   border: 1px solid #84CDFF;
 }
 
+.blue_highlight a {
+  color: white;
+}
+
 .clear {clear: both;}
 .c-l {clear: left;}
 .c-r {clear: right;}
